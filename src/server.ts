@@ -29,7 +29,7 @@ app.get("/vapidPublicKey", (req, res) => {
 app.post("/subscribe", (req, res) => {
   const subscription: webPush.PushSubscription = req.body;
   subscriptions.push(subscription);
-  res.status(201).json({});
+  res.status(201).json({ message: "Subscription successful" });
 });
 
 app.post("/sendMessage", (req, res) => {
