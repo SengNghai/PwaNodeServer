@@ -53,7 +53,7 @@ app.post("/sendNotification", (req, res) => {
     });
   });
 
-  res.status(200).json({});
+  res.status(200).json({ msg: "推送通知" });
 });
 
 app.listen(port, () => {
